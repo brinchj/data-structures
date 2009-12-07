@@ -1,0 +1,6 @@
+\select@language {english}
+\contentsline {chapter}{Contents}{2}{section*.1}
+\contentsline {section}{\numberline {0.1}Opg 1, Exercise 9.3-1}{3}{section*.2}
+\contentsline {section}{\numberline {0.2}Opg 2, Problem 9-4}{3}{section*.2}
+\contentsline {section}{\numberline {0.3}Opg 3, Selection Algorithm on Multi-Sets}{3}{section*.2}
+\contentsline {section}{\numberline {0.4}Opg 4, Deterministic Linear-Time Selection Algorithm}{3}{section*.2}

@@ -1,0 +1,21 @@
+   1. Do exercise 9.3-1 from the book [Cormen et al., 3th edition].
+
+   2. Solve problem 9-4 from the same book.  3. Explain briefly how
+   the selection algorithms presented at the lectures could be
+   modified so that they also work for multisets, i.e. so that in the
+   analysis the assumption about element distinctness can be avoided.
+
+   4. Professor Summer claims that the deterministic linear-time
+   selection algorithm is hopelessly slow in practice. Prove or
+   disprove his claim by performing some practical experiments with
+   different types of input data. As a starting point of your
+   research, you can use the code Jyrki wrote in 1999 (see enclosed
+   file). In particular, can you improve Jyrki's programs?
+
+   5. The behaviour of the random-sampling selection algorithm depends
+   on the parameters alpha, beta, and gamma. Test experimentally or
+   argue theoretically how these parameters should be set to achieve
+   the best possible practical behaviour. The current version of
+   nth_element in the CPH STL relies on random sampling so you are
+   welcome to use the code available at our CVS repository when
+   solving this exercise.
