@@ -1,0 +1,669 @@
+This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=pdflatex 2009.10.30)  26 NOV 2009 15:21
+entering extended mode
+\write18 enabled.
+ %&-line parsing enabled.
+**dot2texi.tex
+(./dot2texi.tex
+LaTeX2e <2005/12/01>
+Babel <v3.8h> and hyphenation patterns for english, usenglishmax, dumylang, noh
+yphenation, loaded.
+(/usr/share/texmf-texlive/tex/latex/base/ltxdoc.cls
+Document Class: ltxdoc 1999/08/08 v2.0u Standard LaTeX documentation class
+(/usr/share/texmf-texlive/tex/latex/base/article.cls
+Document Class: article 2005/09/16 v1.4f Standard LaTeX document class
+(/usr/share/texmf-texlive/tex/latex/base/size10.clo
+File: size10.clo 2005/09/16 v1.4f Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@section=\count80
+\c@subsection=\count81
+\c@subsubsection=\count82
+\c@paragraph=\count83
+\c@subparagraph=\count84
+\c@figure=\count85
+\c@table=\count86
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+(/usr/share/texmf-texlive/tex/latex/base/doc.sty
+Package: doc 2006/02/02 v2.1d Standard LaTeX documentation package (FMi)
+\c@StandardModuleDepth=\count87
+\guard@level=\count88
+\MacrocodeTopsep=\skip43
+\MacroIndent=\dimen103
+\macro@cnt=\count89
+\MacroTopsep=\skip44
+\index@excludelist=\toks14
+
+(/usr/share/texmf-texlive/tex/latex/tools/multicol.sty
+Package: multicol 2006/05/18 v1.6g multicolumn formatting (FMi)
+\c@tracingmulticols=\count90
+\mult@box=\box26
+\multicol@leftmargin=\dimen104
+\c@unbalance=\count91
+\c@collectmore=\count92
+\doublecol@number=\count93
+\multicoltolerance=\count94
+\multicolpretolerance=\count95
+\full@width=\dimen105
+\page@free=\dimen106
+\premulticols=\dimen107
+\postmulticols=\dimen108
+\multicolsep=\skip45
+\multicolbaselineskip=\skip46
+\partial@page=\box27
+\last@line=\box28
+\mult@rightbox=\box29
+\mult@grightbox=\box30
+\mult@gfirstbox=\box31
+\mult@firstbox=\box32
+\@tempa=\box33
+\@tempa=\box34
+\@tempa=\box35
+\@tempa=\box36
+\@tempa=\box37
+\@tempa=\box38
+\@tempa=\box39
+\@tempa=\box40
+\@tempa=\box41
+\@tempa=\box42
+\@tempa=\box43
+\@tempa=\box44
+\@tempa=\box45
+\@tempa=\box46
+\@tempa=\box47
+\@tempa=\box48
+\@tempa=\box49
+\c@columnbadness=\count96
+\c@finalcolumnbadness=\count97
+\last@try=\dimen109
+\multicolovershoot=\dimen110
+\multicolundershoot=\dimen111
+\mult@nat@firstbox=\box50
+\colbreak@box=\box51
+)
+\IndexMin=\dimen112
+\c@IndexColumns=\count98
+\GlossaryMin=\dimen113
+\c@GlossaryColumns=\count99
+\check@sum=\count100
+\bslash@cnt=\count101
+\wrong@table=\toks15
+\c@CodelineNo=\count102
+)) (./dot2texi.sty
+Package: dot2texi 2008/05/07 v3.0 Run dot2tex from LaTeX
+
+(/usr/share/texmf-texlive/tex/latex/moreverb/moreverb.sty
+Package: moreverb 1997/12/07 v2.2d.2 `more' verbatim facilities
+
+(/usr/share/texmf-texlive/tex/latex/tools/verbatim.sty
+Package: verbatim 2003/08/22 v1.5q LaTeX2e package for verbatim enhancements
+\every@verbatim=\toks16
+\verbatim@line=\toks17
+\verbatim@in@stream=\read1
+)
+\verbatim@out=\write3
+\tab@position=\count103
+\tab@size=\count104
+\listing@line=\count105
+)
+(/usr/share/texmf-texlive/tex/latex/xkeyval/xkeyval.sty
+Package: xkeyval 2006/11/18 v2.5f package option processing (HA)
+
+(/usr/share/texmf-texlive/tex/latex/xkeyval/xkeyval.tex
+\XKV@toks=\toks18
+\XKV@depth=\count106
+File: xkeyval.tex 2006/11/18 v2.5f key=value parser (HA)
+
+(/usr/share/texmf-texlive/tex/latex/xkeyval/keyval.tex)))
+system(echo 'write18-test-20091126921'>"dot2texi.w18")...executed.
+
+\instream=\read2
+system(rm -- "dot2texi.w18")...executed.
+
+Package dot2texi Info: Automatically converting dot/neato files on input line 1
+42.
+\c@dtt@fignum=\count107
+)
+(/usr/share/texmf-texlive/tex/latex/paralist/paralist.sty
+Package: paralist 2002/03/18 v2.3b Extended list environments (BS)
+\pltopsep=\skip47
+\plpartopsep=\skip48
+\plitemsep=\skip49
+\plparsep=\skip50
+\pl@lab=\toks19
+)
+(/usr/share/texmf/tex/latex/pgf/frontendlayer/tikz.sty
+(/usr/share/texmf/tex/latex/pgf/basiclayer/pgf.sty
+(/usr/share/texmf/tex/latex/pgf/utilities/pgfrcs.sty
+(/usr/share/texmf/tex/generic/pgf/utilities/pgfutil-common.tex
+\pgfutil@everybye=\toks20
+)
+(/usr/share/texmf/tex/generic/pgf/utilities/pgfutil-latex.def)
+(/usr/share/texmf/tex/generic/pgf/utilities/pgfrcs.code.tex
+Package: pgfrcs 2008/02/20 v2.00 (rcs-revision 1.21)
+))
+Package: pgf 2008/01/15 v2.00 (rcs-revision 1.12)
+
+(/usr/share/texmf/tex/latex/pgf/basiclayer/pgfcore.sty
+(/usr/share/texmf-texlive/tex/latex/graphics/graphicx.sty
+Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texmf-texlive/tex/latex/graphics/graphics.sty
+Package: graphics 2006/02/20 v1.0o Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texmf-texlive/tex/latex/graphics/trig.sty
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+(/etc/texmf/tex/latex/config/graphics.cfg
+File: graphics.cfg 2007/01/18 v1.5 graphics configuration of teTeX/TeXLive
+)
+Package graphics Info: Driver file: pdftex.def on input line 90.
+
+(/usr/share/texmf-texlive/tex/latex/pdftex-def/pdftex.def
+File: pdftex.def 2007/01/08 v0.04d Graphics/color for pdfTeX
+\Gread@gobject=\count108
+))
+\Gin@req@height=\dimen114
+\Gin@req@width=\dimen115
+)
+(/usr/share/texmf/tex/latex/pgf/systemlayer/pgfsys.sty
+(/usr/share/texmf/tex/generic/pgf/systemlayer/pgfsys.code.tex
+Package: pgfsys 2008/02/07 v2.00 (rcs-revision 1.31)
+
+(/usr/share/texmf/tex/generic/pgf/utilities/pgfkeys.code.tex
+\pgfkeys@pathtoks=\toks21
+\pgfkeys@temptoks=\toks22
+)
+\pgf@x=\dimen116
+\pgf@y=\dimen117
+\pgf@xa=\dimen118
+\pgf@ya=\dimen119
+\pgf@xb=\dimen120
+\pgf@yb=\dimen121
+\pgf@xc=\dimen122
+\pgf@yc=\dimen123
+\c@pgf@counta=\count109
+\c@pgf@countb=\count110
+\c@pgf@countc=\count111
+\c@pgf@countd=\count112
+
+(/usr/share/texmf/tex/generic/pgf/systemlayer/pgf.cfg
+File: pgf.cfg 2008/01/13  (rcs-revision 1.6)
+)
+Package pgfsys Info: Driver file for pgf: pgfsys-pdftex.def on input line 885.
+
+(/usr/share/texmf/tex/generic/pgf/systemlayer/pgfsys-pdftex.def
+File: pgfsys-pdftex.def 2007/12/20  (rcs-revision 1.20)
+
+(/usr/share/texmf/tex/generic/pgf/systemlayer/pgfsys-common-pdf.def
+File: pgfsys-common-pdf.def 2007/12/17  (rcs-revision 1.8)
+)))
+(/usr/share/texmf/tex/generic/pgf/systemlayer/pgfsyssoftpath.code.tex
+File: pgfsyssoftpath.code.tex 2008/01/23  (rcs-revision 1.6)
+\pgfsyssoftpath@smallbuffer@items=\count113
+\pgfsyssoftpath@bigbuffer@items=\count114
+)
+(/usr/share/texmf/tex/generic/pgf/systemlayer/pgfsysprotocol.code.tex
+File: pgfsysprotocol.code.tex 2006/10/16  (rcs-revision 1.4)
+))
+(/usr/share/texmf/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2007/01/21 v2.11 LaTeX color extensions (UK)
+
+(/etc/texmf/tex/latex/config/color.cfg
+File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
+)
+Package xcolor Info: Driver file: pdftex.def on input line 225.
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1337.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1341.
+Package xcolor Info: Model `RGB' extended on input line 1353.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1355.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1356.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1357.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1358.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1359.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1360.
+)
+(/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcore.code.tex
+Package: pgfcore 2008/01/15 v2.00 (rcs-revision 1.6)
+
+(/usr/share/texmf/tex/generic/pgf/math/pgfmath.code.tex
+(/usr/share/texmf/tex/generic/pgf/math/pgfmathcalc.code.tex
+(/usr/share/texmf/tex/generic/pgf/math/pgfmathutil.code.tex
+\pgfmath@box=\box52
+)
+(/usr/share/texmf/tex/generic/pgf/math/pgfmathparser.code.tex
+\pgfmath@stack=\toks23
+\c@pgfmath@parsecounta=\count115
+\c@pgfmath@parsecountb=\count116
+\c@pgfmath@parsecountc=\count117
+\pgfmath@parsex=\dimen124
+)
+(/usr/share/texmf/tex/generic/pgf/math/pgfmathoperations.code.tex
+(/usr/share/texmf/tex/generic/pgf/math/pgfmathtrig.code.tex)
+(/usr/share/texmf/tex/generic/pgf/math/pgfmathrnd.code.tex))
+(/usr/share/texmf/tex/generic/pgf/math/pgfmathbase.code.tex)))
+(/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcorepoints.code.tex
+File: pgfcorepoints.code.tex 2008/02/03  (rcs-revision 1.13)
+\pgf@picminx=\dimen125
+\pgf@picmaxx=\dimen126
+\pgf@picminy=\dimen127
+\pgf@picmaxy=\dimen128
+\pgf@pathminx=\dimen129
+\pgf@pathmaxx=\dimen130
+\pgf@pathminy=\dimen131
+\pgf@pathmaxy=\dimen132
+\pgf@xx=\dimen133
+\pgf@xy=\dimen134
+\pgf@yx=\dimen135
+\pgf@yy=\dimen136
+\pgf@zx=\dimen137
+\pgf@zy=\dimen138
+)
+(/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcorepathconstruct.code.tex
+File: pgfcorepathconstruct.code.tex 2008/02/13  (rcs-revision 1.14)
+\pgf@path@lastx=\dimen139
+\pgf@path@lasty=\dimen140
+)
+(/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcorepathusage.code.tex
+File: pgfcorepathusage.code.tex 2008/01/23  (rcs-revision 1.11)
+\pgf@shorten@end@additional=\dimen141
+\pgf@shorten@start@additional=\dimen142
+)
+(/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcorescopes.code.tex
+File: pgfcorescopes.code.tex 2008/01/15  (rcs-revision 1.26)
+\pgfpic=\box53
+\pgf@hbox=\box54
+\pgf@layerbox@main=\box55
+\pgf@picture@serial@count=\count118
+)
+(/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcoregraphicstate.code.tex
+File: pgfcoregraphicstate.code.tex 2007/12/12  (rcs-revision 1.8)
+\pgflinewidth=\dimen143
+)
+(/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcoretransformations.code.tex
+File: pgfcoretransformations.code.tex 2008/02/04  (rcs-revision 1.10)
+\pgf@pt@x=\dimen144
+\pgf@pt@y=\dimen145
+\pgf@pt@temp=\dimen146
+)
+(/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcorequick.code.tex
+File: pgfcorequick.code.tex 2006/10/11  (rcs-revision 1.2)
+)
+(/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcoreobjects.code.tex
+File: pgfcoreobjects.code.tex 2006/10/11  (rcs-revision 1.2)
+)
+(/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcorepathprocessing.code.tex
+File: pgfcorepathprocessing.code.tex 2008/01/23  (rcs-revision 1.7)
+)
+(/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcorearrows.code.tex
+File: pgfcorearrows.code.tex 2007/06/07  (rcs-revision 1.8)
+)
+(/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcoreshade.code.tex
+File: pgfcoreshade.code.tex 2007/12/10  (rcs-revision 1.9)
+\pgf@max=\dimen147
+\pgf@sys@shading@range@num=\count119
+)
+(/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcoreimage.code.tex
+File: pgfcoreimage.code.tex 2008/01/15  (rcs-revision 1.1)
+\pgfexternal@startupbox=\box56
+)
+(/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcorelayers.code.tex
+File: pgfcorelayers.code.tex 2008/01/15  (rcs-revision 1.1)
+)
+(/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcoretransparency.code.tex
+File: pgfcoretransparency.code.tex 2008/01/17  (rcs-revision 1.2)
+)
+(/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcorepatterns.code.tex
+File: pgfcorepatterns.code.tex 2008/01/15  (rcs-revision 1.1)
+)))
+(/usr/share/texmf/tex/generic/pgf/modules/pgfmoduleshapes.code.tex
+File: pgfmoduleshapes.code.tex 2008/02/13  (rcs-revision 1.4)
+\pgfnodeparttextbox=\box57
+\toks@savedmacro=\toks24
+)
+(/usr/share/texmf/tex/generic/pgf/modules/pgfmoduleplot.code.tex
+File: pgfmoduleplot.code.tex 2008/01/15  (rcs-revision 1.1)
+\pgf@plotwrite=\write4
+)
+(/usr/share/texmf/tex/latex/pgf/compatibility/pgfcomp-version-0-65.sty
+Package: pgfcomp-version-0-65 2007/07/03 v2.00 (rcs-revision 1.7)
+\pgf@nodesepstart=\dimen148
+\pgf@nodesepend=\dimen149
+)
+(/usr/share/texmf/tex/latex/pgf/compatibility/pgfcomp-version-1-18.sty
+Package: pgfcomp-version-1-18 2007/07/23 v2.00 (rcs-revision 1.1)
+))
+(/usr/share/texmf/tex/latex/pgf/utilities/pgffor.sty
+(/usr/share/texmf/tex/generic/pgf/utilities/pgffor.code.tex
+Package: pgffor 2007/11/07 v2.00 (rcs-revision 1.8)
+\pgffor@iter=\dimen150
+\pgffor@skip=\dimen151
+))
+(/usr/share/texmf/tex/generic/pgf/frontendlayer/tikz/tikz.code.tex
+Package: tikz 2008/02/13 v2.00 (rcs-revision 1.27)
+
+(/usr/share/texmf/tex/generic/pgf/libraries/pgflibraryplothandlers.code.tex
+File: pgflibraryplothandlers.code.tex 2007/03/09 v2.00 (rcs-revision 1.9)
+\pgf@plot@mark@count=\count120
+\pgfplotmarksize=\dimen152
+)
+\tikz@lastx=\dimen153
+\tikz@lasty=\dimen154
+\tikz@lastxsaved=\dimen155
+\tikz@lastysaved=\dimen156
+\tikzleveldistance=\dimen157
+\tikzsiblingdistance=\dimen158
+\tikz@figbox=\box58
+\tikz@tempbox=\box59
+\tikztreelevel=\count121
+\tikznumberofchildren=\count122
+\tikznumberofcurrentchild=\count123
+\tikz@fig@count=\count124
+
+(/usr/share/texmf/tex/generic/pgf/modules/pgfmodulematrix.code.tex
+File: pgfmodulematrix.code.tex 2008/01/15  (rcs-revision 1.1)
+\pgfmatrixcurrentrow=\count125
+\pgfmatrixcurrentcolumn=\count126
+\pgf@matrix@numberofcolumns=\count127
+)
+\tikz@expandcount=\count128
+
+(/usr/share/texmf/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarytopat
+hs.code.tex
+File: tikzlibrarytopaths.code.tex 2008/01/09 v2.00 (rcs-revision 1.1)
+))) (/usr/share/texmf-texlive/tex/latex/hyperref/hyperref.sty
+Package: hyperref 2007/02/07 v6.75r Hypertext links for LaTeX
+\@linkdim=\dimen159
+\Hy@linkcounter=\count129
+\Hy@pagecounter=\count130
+
+(/usr/share/texmf-texlive/tex/latex/hyperref/pd1enc.def
+File: pd1enc.def 2007/02/07 v6.75r Hyperref: PDFDocEncoding definition (HO)
+)
+(/etc/texmf/tex/latex/config/hyperref.cfg
+File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
+)
+(/usr/share/texmf-texlive/tex/latex/oberdiek/kvoptions.sty
+Package: kvoptions 2006/08/22 v2.4 Connects package keyval with LaTeX options (
+HO)
+)
+Package hyperref Info: Hyper figures OFF on input line 2288.
+Package hyperref Info: Link nesting OFF on input line 2293.
+Package hyperref Info: Hyper index ON on input line 2296.
+Package hyperref Info: Plain pages OFF on input line 2303.
+Package hyperref Info: Backreferencing OFF on input line 2308.
+
+Implicit mode ON; LaTeX internals redefined
+Package hyperref Info: Bookmarks ON on input line 2444.
+(/usr/share/texmf-texlive/tex/latex/ltxmisc/url.sty
+\Urlmuskip=\muskip10
+Package: url 2005/06/27  ver 3.2  Verb mode for urls, etc.
+)
+LaTeX Info: Redefining \url on input line 2599.
+\Fld@menulength=\count131
+\Field@Width=\dimen160
+\Fld@charsize=\dimen161
+\Choice@toks=\toks25
+\Field@toks=\toks26
+Package hyperref Info: Hyper figures OFF on input line 3102.
+Package hyperref Info: Link nesting OFF on input line 3107.
+Package hyperref Info: Hyper index ON on input line 3110.
+Package hyperref Info: backreferencing OFF on input line 3117.
+Package hyperref Info: Link coloring OFF on input line 3122.
+\Hy@abspage=\count132
+\c@Item=\count133
+\c@Hfootnote=\count134
+)
+*hyperref using default driver hpdftex*
+(/usr/share/texmf-texlive/tex/latex/hyperref/hpdftex.def
+File: hpdftex.def 2007/02/07 v6.75r Hyperref driver for pdfTeX
+\Fld@listcount=\count135
+)
+(/usr/share/texmf/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryshape
+s.code.tex
+File: tikzlibraryshapes.code.tex 2008/01/09 v2.00 (rcs-revision 1.1)
+
+(/usr/share/texmf/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryshape
+s.geometric.code.tex
+File: tikzlibraryshapes.geometric.code.tex 2008/01/09 v2.00 (rcs-revision 1.1)
+
+(/usr/share/texmf/tex/generic/pgf/libraries/pgflibraryshapes.geometric.code.tex
+File: pgflibraryshapes.geometric.code.tex 2008/02/01 v2.00 (rcs-revision 1.22)
+))
+(/usr/share/texmf/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryshape
+s.misc.code.tex
+File: tikzlibraryshapes.misc.code.tex 2008/01/09 v2.00 (rcs-revision 1.1)
+
+(/usr/share/texmf/tex/generic/pgf/libraries/pgflibraryshapes.misc.code.tex
+File: pgflibraryshapes.misc.code.tex 2008/02/12 v2.00 (rcs-revision 1.10)
+))
+(/usr/share/texmf/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryshape
+s.symbols.code.tex
+File: tikzlibraryshapes.symbols.code.tex 2008/01/09 v2.00 (rcs-revision 1.1)
+
+(/usr/share/texmf/tex/generic/pgf/libraries/pgflibraryshapes.symbols.code.tex
+File: pgflibraryshapes.symbols.code.tex 2008/01/30 v2.00 (rcs-revision 1.13)
+))
+(/usr/share/texmf/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryshape
+s.arrows.code.tex
+File: tikzlibraryshapes.arrows.code.tex 2008/01/09 v2.00 (rcs-revision 1.1)
+
+(/usr/share/texmf/tex/generic/pgf/libraries/pgflibraryshapes.arrows.code.tex
+File: pgflibraryshapes.arrows.code.tex 2007/11/10 v2.00 (rcs-revision 1.3)
+))
+(/usr/share/texmf/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryshape
+s.callouts.code.tex
+(/usr/share/texmf/tex/generic/pgf/libraries/pgflibraryshapes.callouts.code.tex)
+)
+(/usr/share/texmf/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryshape
+s.multipart.code.tex
+File: tikzlibraryshapes.multipart.code.tex 2008/01/09 v2.00 (rcs-revision 1.1)
+
+(/usr/share/texmf/tex/generic/pgf/libraries/pgflibraryshapes.multipart.code.tex
+File: pgflibraryshapes.multipart.code.tex 2008/01/15 v2.00 (rcs-revision 1.7)
+\pgfnodepartlowerbox=\box60
+\pgfnodepartsecondbox=\box61
+\pgfnodepartthirdbox=\box62
+\pgfnodepartfourthbox=\box63
+)))
+(/usr/share/texmf/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryarrow
+s.code.tex
+File: tikzlibraryarrows.code.tex 2008/01/09 v2.00 (rcs-revision 1.1)
+
+(/usr/share/texmf/tex/generic/pgf/libraries/pgflibraryarrows.code.tex
+File: pgflibraryarrows.code.tex 2007/06/07 v2.00 (rcs-revision 1.7)
+))
+(/usr/share/texmf/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryautom
+ata.code.tex
+File: tikzlibraryautomata.code.tex 2008/02/14 v2.00 (rcs-revision 1.2)
+)
+(/usr/share/texmf/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarydecor
+ations.pathmorphing.code.tex
+(/usr/share/texmf/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarydecor
+ations.code.tex
+(/usr/share/texmf/tex/generic/pgf/modules/pgfmoduledecorations.code.tex
+\pgfdecoratedcompleteddistance=\dimen162
+\pgfdecoratedremainingdistance=\dimen163
+\pgfdecoratedinputsegmentcompleteddistance=\dimen164
+\pgfdecoratedinputsegmentremainingdistance=\dimen165
+\pgf@decorate@distancetomove=\dimen166
+\pgf@decorate@repeatstate=\count136
+\pgfdecorationsegmentamplitude=\dimen167
+\pgfdecorationsegmentlength=\dimen168
+))
+(/usr/share/texmf/tex/generic/pgf/libraries/pgflibrarydecorations.pathmorphing.
+code.tex))
+(/usr/share/texmf/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarydecor
+ations.footprints.code.tex
+(/usr/share/texmf/tex/generic/pgf/libraries/pgflibrarydecorations.footprints.co
+de.tex)) (./dot2texi.aux)
+\openout1 = `dot2texi.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+Package doc Info: Made | a short reference for \verb on input line 14.
+Package hyperref Info: Link coloring OFF on input line 14.
+
+(/usr/share/texmf-texlive/tex/latex/hyperref/nameref.sty
+Package: nameref 2006/12/27 v2.28 Cross-referencing by name of section
+
+(/usr/share/texmf-texlive/tex/latex/oberdiek/refcount.sty
+Package: refcount 2006/02/20 v3.0 Data extraction from references (HO)
+)
+\c@section@level=\count137
+)
+LaTeX Info: Redefining \ref on input line 14.
+LaTeX Info: Redefining \pageref on input line 14.
+ (./dot2texi.out)
+(./dot2texi.out)
+\@outlinefile=\write5
+\openout5 = `dot2texi.out'.
+
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <12> on input line 16.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 16.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 16.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 16.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 19.
+
+Underfull \hbox (badness 10000) in paragraph at lines 19--21
+
+ []
+
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 29.
+(/usr/share/texmf-texlive/tex/latex/base/omscmr.fd
+File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 29.
+ [1
+
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
+LaTeX Font Info:    Font shape `OMS/cmtt/m/n' in size <10> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 49.
+LaTeX Font Info:    Font shape `OT1/cmtt/bx/n' in size <10> not available
+(Font)              Font shape `OT1/cmtt/m/n' tried instead on input line 56.
+ [2]
+LaTeX Font Info:    Font shape `OT1/cmtt/bx/n' in size <14.4> not available
+(Font)              Font shape `OT1/cmtt/m/n' tried instead on input line 107.
+
+Overfull \hbox (35.342pt too wide) in paragraph at lines 124--125
+[]\OT1/cmr/m/n/10 Set out-put for-mat. Al-lowed val-ues are []\OT1/cmtt/m/n/10 
+tikz|pgf|pstricks\OT1/cmr/m/n/10 . 
+ []
+
+[3]
+Overfull \hbox (13.08272pt too wide) in paragraph at lines 144--145
+\OT1/cmr/m/n/10 Compiling the above code will gen-er-ate the files \OT1/cmtt/m/
+n/10 mygraph.dot \OT1/cmr/m/n/10 and \OT1/cmtt/m/n/10 mygraph.tex\OT1/cmr/m/n/1
+0 .
+ []
+
+[4] [5]
+\openout3 = `docgraphs/dot2texi-dot2tex-fig1.dot'.
+
+ Opening dot2tex stream docgraphs/dot2texi-dot2tex-fig1.dot
+system(dot2tex --figonly -ftikz      --prog=neato -tmath  -o docgraphs/dot2texi
+-dot2tex-fig1.tex  docgraphs/dot2texi-dot2tex-fig1.dot)...executed.
+
+Package dot2texo Info: docgraphs/dot2texi-dot2tex-fig1.dot converted on input l
+ine 234.
+
+(./docgraphs/dot2texi-dot2tex-fig1.tex)
+\openout3 = `docgraphs/dot2texi-dot2tex-fig2.dot'.
+
+
+Opening dot2tex stream docgraphs/dot2texi-dot2tex-fig2.dot
+system(dot2tex --figonly -ftikz  --straightedges --styleonly   --prog=fdp   -o 
+docgraphs/dot2texi-dot2tex-fig2.tex  docgraphs/dot2texi-dot2tex-fig2.dot)...exe
+cuted.
+
+Package dot2texo Info: docgraphs/dot2texi-dot2tex-fig2.dot converted on input l
+ine 272.
+
+(./docgraphs/dot2texi-dot2tex-fig2.tex) [6]
+\pgf@layerbox@background=\box64
+\pgf@layerboxsaved@background=\box65
+\pgf@layerbox@foreground=\box66
+\pgf@layerboxsaved@foreground=\box67
+\openout3 = `docgraphs/dot2texi-dot2tex-fig3.dot'.
+
+
+Opening dot2tex stream docgraphs/dot2texi-dot2tex-fig3.dot
+system(dot2tex --codeonly -ftikz   --styleonly   --prog=dot   -o docgraphs/dot2
+texi-dot2tex-fig3.tex -s -tmath docgraphs/dot2texi-dot2tex-fig3.dot)...executed
+.
+
+Package dot2texo Info: docgraphs/dot2texi-dot2tex-fig3.dot converted on input l
+ine 322.
+
+(./docgraphs/dot2texi-dot2tex-fig3.tex) [7]
+\openout3 = `docgraphs/dot2texi-dot2tex-fig4.dot'.
+
+
+Opening dot2tex stream docgraphs/dot2texi-dot2tex-fig4.dot
+system(dot2tex --codeonly -ftikz --tikzedgelabels  --styleonly   --prog=neato  
+ -o docgraphs/dot2texi-dot2tex-fig4.tex  docgraphs/dot2texi-dot2tex-fig4.dot)..
+.executed.
+
+Package dot2texo Info: docgraphs/dot2texi-dot2tex-fig4.dot converted on input l
+ine 410.
+
+(./docgraphs/dot2texi-dot2tex-fig4.tex) [8]
+\openout3 = `docgraphs/dot2texi-dot2tex-fig5.dot'.
+
+
+Opening dot2tex stream docgraphs/dot2texi-dot2tex-fig5.dot
+system(dot2tex --figonly -ftikz      --prog=circo  --graphstyle="shorten >=1pt,
+shorten <=1pt" -o docgraphs/dot2texi-dot2tex-fig5.tex  docgraphs/dot2texi-dot2t
+ex-fig5.dot)...executed.
+
+Package dot2texo Info: docgraphs/dot2texi-dot2tex-fig5.dot converted on input l
+ine 458.
+
+(./docgraphs/dot2texi-dot2tex-fig5.tex) [9] [10] [11] (./dot2texi.aux) ) 
+Here is how much of TeX's memory you used:
+ 12014 strings out of 95086
+ 226244 string characters out of 1183254
+ 312855 words of memory out of 1500000
+ 14888 multiletter control sequences out of 10000+50000
+ 9441 words of font info for 35 fonts, out of 1200000 for 2000
+ 28 hyphenation exceptions out of 8191
+ 47i,8n,69p,582b,814s stack positions out of 5000i,500n,6000p,200000b,5000s
+</usr/s
+hare/texmf-texlive/fonts/type1/bluesky/cm/cmbx10.pfb></usr/share/texmf-texlive/
+fonts/type1/bluesky/cm/cmbx12.pfb></usr/share/texmf-texlive/fonts/type1/bluesky
+/cm/cmbxti10.pfb></usr/share/texmf-texlive/fonts/type1/bluesky/cm/cmmi10.pfb></
+usr/share/texmf-texlive/fonts/type1/bluesky/cm/cmr10.pfb></usr/share/texmf-texl
+ive/fonts/type1/bluesky/cm/cmr12.pfb></usr/share/texmf-texlive/fonts/type1/blue
+sky/cm/cmr17.pfb></usr/share/texmf-texlive/fonts/type1/bluesky/cm/cmr6.pfb></us
+r/share/texmf-texlive/fonts/type1/bluesky/cm/cmr7.pfb></usr/share/texmf-texlive
+/fonts/type1/bluesky/cm/cmr8.pfb></usr/share/texmf-texlive/fonts/type1/bluesky/
+cm/cmsy10.pfb></usr/share/texmf-texlive/fonts/type1/bluesky/cm/cmti10.pfb></usr
+/share/texmf-texlive/fonts/type1/bluesky/cm/cmtt10.pfb></usr/share/texmf-texliv
+e/fonts/type1/bluesky/cm/cmtt12.pfb></usr/share/texmf-texlive/fonts/type1/blues
+ky/cm/cmtt8.pfb></usr/share/texmf-texlive/fonts/type1/bluesky/cm/cmtt9.pfb>
+Output written on dot2texi.pdf (11 pages, 140245 bytes).
+PDF statistics:
+ 208 PDF objects out of 1000 (max. 8388607)
+ 33 named destinations out of 1000 (max. 131072)
+ 135 words of extra memory for PDF output out of 10000 (max. 10000000)
+

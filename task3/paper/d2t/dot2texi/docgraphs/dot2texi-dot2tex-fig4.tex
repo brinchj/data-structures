@@ -1,0 +1,18 @@
+%%
+\node (A) at (71bp,77bp) [state, initial] {A};
+  \node (C) at (204bp,128bp) [state] {C};
+  \node (B) at (165bp,67bp) [state] {B};
+  \node (E) at (28bp,19bp) [state] {E};
+  \node (D) at (100bp,26bp) [state] {D};
+  \node (F) at (133bp,115bp) [state,accepting] {F};
+  \draw [->] (C) to[bend left] node[auto] {5} (F);
+  \draw [->] (F) to[bend left] node[auto] {8} (B);
+  \draw [->] (B) to[bend left] node[auto] {4} (C);
+  \draw [->] (B) to[loop above] node[auto] {3} (B);
+  \draw [->] (B) to[bend left] node[auto] {1} (A);
+  \draw [->] (D) to[bend left] node[auto] {2} (E);
+  \draw [->] (F) to[bend left] node[auto] {7} (D);
+  \draw [->] (A) to[bend left] node[auto] {7} (D);
+  \draw [->] (A) to[bend left] node[auto] {2} (B);
+  \draw [->] (E) to[bend left] node[auto] {1,6} (A);
+%

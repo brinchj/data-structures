@@ -1,0 +1,264 @@
+\documentclass[10pt,oneside,a4paper,final,english]{memoir}
+
+\input{env/packages}
+\input{env/forloop}
+\input{env/languages}
+\input{env/graphics}
+\input{env/math}
+%\input{env/bibtex}
+
+\usepackage{datetime}
+
+\chapterstyle{thatcher}
+
+
+\usepackage[autosize,outputdir=graphs/]{dot2texi}
+\usepackage{tikz}
+\usetikzlibrary{shapes,arrows}
+
+
+%\pagestyle{fancy}
+\begin{document}
+  \fontencoding{T1}
+%  \fontseries{m}
+%  \fontshape{n}
+%  \fontsize{12}{15}
+%  \selectfont
+
+\newcommand{\ct}{\texttt}
+\input{env/preamble}
+
+\maketitle
+\newpage
+
+
+\section*{1) Exercise 19.4-1}
+For any natural number $n$ it is possible to generate a fibonacci heap
+of size $n$, for which its internal tree structure is linear.
+
+\begin{itemize}
+\item Base case $n=0$: Insert an element. The heap is now of size $1$
+  and linear.
+\item Induction step $n \to n+1$: Suppose we have a linear fibonacci
+  heap of size $n$ with $x$ as minimum. Insert three nodes $a$,
+  $b$ and $c$ where $a < b < c$ and all three are lower than
+  the minimum of the heap ($a$ is the new minimum). Call extract-min
+  to extract $a$. The \ct{Consolidate} operation will now make a tre
+  with $b$ as root and $x$ and $c$ as children. Delete $c$. We
+  now have a linear fibonacci heap of size $n+1$.
+\end{itemize}
+
+\begin{tabular}{c|cc|cc}
+  \ct{Insert(a,b,c)} &  & \ct{Extract-min()} &  &
+  \ct{Delete(c)}\\
+\begin{dot2tex}
+digraph G {
+  x -> y -> z;
+  x a b c;
+  { rank=same; x a b }
+  { rank=same; y z c }
+}
+\end{dot2tex}
+&  &
+\begin{dot2tex}
+digraph G {
+  b -> x -> y -> z;
+  b -> c;
+  { rank=same; x c }
+  { rank=same; y z}
+}
+\end{dot2tex}
+&  &
+\begin{dot2tex}
+digraph G {
+  b -> x -> y -> z;
+  { rank=same; x b }
+}
+\end{dot2tex}
+\end{tabular}
+
+
+\section*{2) Problem 19-4}
+
+A mergeable heap backed by a 2-3-4-tree. The operations could be
+implemented by:
+
+\begin{itemize}
+\item \ct{Minimum}: Maintain a pointer to the smallest node to
+  achieve $O(1)$.
+
+\item \ct{Decrease-key}: Decrease the key of the leaf and update all
+  the affected \ct{small} values of its parent etc. Update the
+  minimum-pointer if needed. This operation is $O(\log n)$.
+
+\item \ct{Insert}: First, find the leaf where the node is to be
+  inserted by choosing the appropriate child (largest \ct{small} value
+  lower than the value inserted). Now, create a new leaf for the value
+  and add it to the parent of the found leaf. If the parent is full do
+  splitting as in 2-3-4-trees. Update the small values and the
+  minimum-pointer if the inserted value is a new minimum. Time:
+  $O(\log n)$
+
+\item \ct{Delete}: This is done as in an 2-3-4-tree. First delete the
+  node. If its parent becomes empty perform the appropriate
+  merging. Update the appropriate \ct{small} values. If the deleted
+  key was the minimum, scan the tree for the new minimum. This
+  operation is $O(\log n)$ time.
+
+\item \ct{Extract-min}: Call \ct{Delete} on the minimum (given by the
+  pointer). This is $O(\log n)$.
+
+\item \ct{Union}: How to make a new heap $H$ from two existing heaps
+  $H_0$ and $H_1$. If the two $H_0$ and $H_1$ have equal heights, make
+  a new root that these as children. Set its \ct{small} value to the
+  minimum of the two heaps. This case takes $O(1)$.
+
+  If $H_0$ is tallest, find some node in $H_0$ whose subtrees are the
+  same height as $H_1$ and add $H_1$ as a child.
+
+  Finding $H_1$'s new parent in $H_0$ is $O(\log(\max(n,m))) = O(\log
+  (n+m))$.
+\end{itemize}
+
+
+
+
+\subsection{Stubbed C++ code}
+\subsubsection{File: heap.h++}
+\lstinputlisting{../code/heap.h++}
+\subsubsection{File: heap.c++}
+\lstinputlisting{../code/heap.c++}
+
+
+\section*{3) Binomial Heaps}
+I have investigated some running times in binomial heaps:
+\begin{itemize}
+\item $n$ inserts: $O(n)$
+\item $m$ deletes: $O(m \log m)$
+\item $n$ inserts then $m$ deletes: $O(n + m \log m)$
+\end{itemize}
+
+I convinced that the running time of a mixed sequence of inserts and
+deletes are worst case $O(N\log N)$ where $N$ is the total number of
+operations.
+
+
+\section*{4) Pennants }
+
+A pennant is a heap ordered binary tree with a size of $2^r$ where $r$
+is the rank. The root node has no left child and its right subtree is
+a perfect binary tree. The minimum value of the tree is stored in the
+root node. Consider now an operation that merges to trees of same
+rank:
+
+\ct{Merge(s, t)}\\
+
+\noindent
+\begin{figure}[h]
+\centering
+\begin{dot2tex}[options=-tmath]
+graph G {
+
+  2 -- 3 [label="s"];
+  3 -- 4;
+  3 -- 15;
+
+  { rank=same; 2 3 }
+
+  5 -- 6 [label="t"];
+  6 -- 7;
+  6 -- 42;
+
+  { rank=same; 5 6  }
+  { rank=same; 42 7 }
+}
+\end{dot2tex}
+\caption{Example of two pennants $s$ and $t$}
+\end{figure}
+
+\begin{figure}[h]
+\centering
+\begin{dot2tex}[options=-tmath]
+graph G {
+  2 -- 3 [label="p"];
+  3 -- 6;
+  6 -- 7;
+  6 -- 42;
+
+  3 -- 4;
+  4 -- 5;
+  4 -- 15;
+
+  { rank=same; 2 3 }
+}
+\end{dot2tex}
+\caption{The two pennants $s$ and $t$ merged}
+\end{figure}
+
+\noindent
+Two pennants can be merged by:
+\begin{enumerate}
+\item Initialize a new pennant $p$.
+\item If $s$ is the tree with the smallest root and $t$ the other
+  tree then extract the root of $s$ and let it be the new root of $p$.
+\item If now Root($t$) $<$ Root($s$) then set
+  Right(Root($p$)) = $t$ and Left($t$) = $s$. $p$ is now the merged
+  tree. This case requires $O(1)$ time.
+
+  If instead Root($t$) $>$ Root($s$) then swap the two and
+  set Right(Root($p$)) = $t$. Set Left($t$) = $s$. The problem now is
+  that Left($t$) may now be a heap-ordered tree. It's root could be
+  larger than its children. We therefore need to push the down until
+  it reaches a smaller node or the end. This case requires $O(r)$
+  time (This is the case illustrated in the example).
+\end{enumerate}
+
+The worst case running time of the \ct{Merge} operation is thereby
+$O(r)$ where $r$ is the rank of the two trees (each of size $2^r$).
+
+The worst case situation when performing a \ct{Union} operation on two
+pennant queues of size $S$ is when both queues has a pennant for each
+rank $r$. In this case $S$ \ct{Merge} operations are performed. The
+worst case running time of this operation is thereby:
+\[ O\Big(\sum_{r=0}^S r \Big) = O(\frac{S^2+S}{2}) = O(S^2) =
+O(\log^2(N)) \]
+
+Where $N$ is the number of elements in the united queues.
+
+
+\section*{5) Fibonacci Heaps}
+A normal fibonacci heap has the following worst case running times for
+the priority queue operations:
+\begin{itemize}
+\item \ct{Insert}: $O(1)$
+\item \ct{Find-min}: $O(1)$
+\item \ct{Extract-min}: $O(n)$
+\end{itemize}
+
+The worst case of \ct{Extract-min} is bounded by the maximum of
+children the minimum-node has. If we give an upper bound of $O(\log
+n)$ on this number the operation would run in worst case $O(\log
+n)$. My idea is to move some of the work from the \ct{Extract-min}
+onto the \ct{Insert} operation which currently runs in $O(1)$. It goes
+as follows:
+\begin{itemize}
+\item Set an upper bound of $2\log n$ on the children any node can
+  have.
+\item Keep track of the count of a node's children when inserting and
+  extracting using a counter.
+\item If a node has $2\log n$ children when inserting a new child, cut
+  the $\log n$ of them and make them roots. Run consolidate.
+\end{itemize}
+
+If one could actually maintain an invariant that guaranteed that no
+node has more than $O(\log n)$ children, then \ct{Extract-min} would
+have $O(\log n)$ worst case.
+
+
+\end{document}
+
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: t
+%%% End:

@@ -1,0 +1,12 @@
+
+\begin{tikzpicture}[>=latex,line join=bevel,]
+%%
+\node (y) at (44bp,62bp) [draw,ellipse] {y};
+  \node (x) at (44bp,118bp) [draw,ellipse] {x};
+  \node (b) at (9bp,118bp) [draw,ellipse] {b};
+  \node (z) at (44bp,8bp) [draw,ellipse] {z};
+  \draw [->] (x) ..controls (44bp,102.48bp) and (44bp,91.615bp)  .. (y);
+  \draw [->] (b) ..controls (20.628bp,118bp) and (23.232bp,118bp)  .. (x);
+  \draw [->] (y) ..controls (44bp,44.897bp) and (44bp,34.946bp)  .. (z);
+%
+\end{tikzpicture}

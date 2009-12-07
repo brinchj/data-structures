@@ -1,0 +1,6 @@
+digraph G {
+  b -> x -> y -> z;
+  b -> c;
+  { rank=same; x c }
+  { rank=same; y z}
+}
