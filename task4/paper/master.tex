@@ -1,0 +1,87 @@
+\documentclass[10pt,oneside,a4paper,final,english]{memoir}
+
+\input{env/packages}
+\input{env/forloop}
+\input{env/languages}
+\input{env/graphics}
+\input{env/math}
+%\input{env/bibtex}
+
+\usepackage{datetime}
+
+\chapterstyle{thatcher}
+
+
+\usepackage[autosize,outputdir=graphs/]{dot2texi}
+\usepackage{tikz}
+\usetikzlibrary{shapes,arrows}
+
+
+%\pagestyle{fancy}
+\begin{document}
+  \fontencoding{T1}
+%  \fontseries{m}
+%  \fontshape{n}
+%  \fontsize{12}{15}
+%  \selectfont
+
+\newcommand{\ct}{\texttt}
+\input{env/preamble}
+
+\maketitle
+\newpage
+
+
+\section*{1) Exercise 20.3-4}
+I am to describe the following recurrence describing the space usage
+of a van Emde Boas tree:
+\[S(K) = (1 + \sqrt{K})\cdot S(\sqrt{K}) + O(\sqrt{K})\]
+
+The representations are:
+\begin{itemize}
+\item $S(\sqrt{K})$: The space usage of vEB-tree of size $\sqrt{K}$.
+\item $(1+\sqrt{K})$: The number of sub-trees the current tree
+  contains. This is 1 for the summary tree and the $\sqrt{K}$ is for
+  the sub-trees.
+\item $O(\sqrt{K})$: The space usage of the current tree-node
+  containing $\min$, $\max$ and $u$ and possibly references to the
+  summary and sub-trees. However, this should not be necessary.
+\end{itemize}
+
+Next, I am to show, that the recurrence results in a running time of
+$O(n)$. I prove this by complete (strong) induction:
+
+Assume that $S(K) = O(K)$ for all $K < N$. Then
+\[ S(N) = (1 + \sqrt{N}) \cdot O(\sqrt{N}) + O(\sqrt{N}) \Rightarrow \]
+\[ S(N) = O(\sqrt{N}) + \sqrt{N}\cdot O(\sqrt{N}) + O(\sqrt{N})
+\Rightarrow \]
+\[ S(N) = O(N) + O(\sqrt{N}) \Rightarrow \]
+\[ S(N) = O(N) \]
+
+
+
+\section*{2) Problem 20-1: van Emde Boas Trees}
+\subsection{a: What happens when inserting an element that already
+  exists?}
+Short answer: Nothing. The routine will recursively search through the
+tree, looking for the element. At some point, the base case of $u
+= 2$ will occur (a 2-vEB tree is the base case). Here we simply set
+the bit representing the number being inserted ignoring that the bit
+is already set. This does not change the state of the tree in any way.
+
+\subsection{b: What happens when deleting a non-existing element?}
+Short answer: Nothing. Again the routine searches the tree for the
+element $x$. However, since the element is not in the tree, the base
+case will either be $\min = \max = \text{nil}$ (empty tree) or $\min =
+\max \neq \text{nil}$ (1 element, not $x$). In the first case nothing
+happens. In the latter, a non-existing element is ``deleted'' by
+setting a zero-bit to zero: nothing happens.
+
+
+\end{document}
+
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: t
+%%% End:

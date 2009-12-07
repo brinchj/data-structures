@@ -1,0 +1,15 @@
+
+\begin{tikzpicture}[>=latex,line join=bevel,]
+%%
+\node (c) at (90bp,58bp) [ball, ball color=black] {};
+  \node (a_4) at (62bp,114bp) [ball, ball color = red] {};
+  \node (a_3) at (136bp,107bp) [ball, ball color = red] {};
+  \node (a_2) at (154bp,19bp) [ball, ball color =green] {};
+  \node (a_1) at (28bp,31bp) [ball, ball color =green] {};
+  \draw [decorate,decoration=snake,blue] (a_4) -- (a_3);
+  \draw [decorate,decoration=snake,blue] (a_3) -- (c);
+  \draw [decorate,decoration=zigzag,green,thick] (c) -- (a_2);
+  \draw [decorate,decoration=zigzag,green,thick] (a_1) -- (c);
+  \draw [decorate,decoration=snake,blue] (c) -- (a_4);
+%
+\end{tikzpicture}
